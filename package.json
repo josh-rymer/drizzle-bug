@@ -1,0 +1,26 @@
+{
+  "name": "drizzle-bug",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "docker:up": "docker compose up -d",
+    "db:generate": "drizzle-kit generate --config drizzle.config.js",
+    "db:migrate": "drizzle-kit migrate --config drizzle.config.js",
+    "db:seed": "tsx db/seed.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "drizzle-orm": "^0.41.0",
+    "hono": "^4.7.5",
+    "pg": "^8.14.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "@types/node": "^20.11.17",
+    "@types/pg": "^8.11.11",
+    "drizzle-kit": "^0.30.5",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.2"
+  },
+  "packageManager": "yarn@4.6.0"
+}

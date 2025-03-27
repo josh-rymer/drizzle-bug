@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "checkJs": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "lib": ["esnext"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@db/*": ["./db/*"],
+    },
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "esnext"
+  },
+  "include": ["db/**/*.ts", "src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
