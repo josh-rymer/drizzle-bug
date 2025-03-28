@@ -12,10 +12,10 @@ app.post('/', async (c) => {
   }
 
   const broken = await breaks(codeValue)
-  const noView = await noViews(codeValue)
-  const working = await works(codeValue)
+  const worksWithoutViews = await noViews(codeValue)
+  const workAround = await works(codeValue)
 
-  return c.json({ broken, working, noView }, 200)
+  return c.json({ broken, workAround, worksWithoutViews }, 200)
 })
 
 serve({
